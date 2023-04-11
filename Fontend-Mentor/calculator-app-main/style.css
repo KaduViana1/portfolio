@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: "League Spartan", sans-serif;
+}
+#full-calc {
+  width: 100%;
+  height: 100%;
+  background-color: hsl(222, 26%, 31%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.header-L {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+  margin-left: 7px;
+  padding-right: 25px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.theme {
+  position: relative;
+  top: 0.8rem;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+}
+
+.header-R {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 25%;
+  box-sizing: border-box;
+}
+
+.results {
+  width: 87%;
+  height: 90px;
+  background-color: hsl(224, 36%, 15%);
+  margin-bottom: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 3rem;
+  box-sizing: border-box;
+  padding-right: 7%;
+}
+
+.buttons-container {
+  box-sizing: border-box;
+  width: 87%;
+  height: 430px;
+  background-color: hsl(223, 31%, 20%);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+  padding: 20px;
+  row-gap: 15px;
+}
+
+.button-reset {
+  grid-column: 1 / span 2;
+  grid-row: 5;
+}
+
+.button-equal {
+  grid-column: 3 / span 2;
+  grid-row: 5;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+}
+
+.numbers {
+  font-size: 2rem;
+  background-color: hsl(30, 25%, 89%);
+  color: hsl(221, 14%, 31%);
+  box-shadow: 0px 3px hsl(28, 16%, 65%);
+}
+
+.del,
+.reset {
+  color: white;
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0px 3px hsl(224, 28%, 35%);
+  font-size: 1.2rem;
+}
+
+.equal {
+  background-color: hsl(6, 63%, 50%);
+  color: white;
+  font-size: 1.2rem;
+  box-shadow: 0px 3px hsl(6, 70%, 34%);
+}
+
+.toggle-container {
+  background-color: hsl(223, 31%, 20%);
+  height: 27px;
+  border-radius: 15px;
+  width: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.slider {
+  content: "";
+  transition: 0.3s;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: hsl(6, 63%, 50%);
+  position: absolute;
+  left: 4px;
+}
+
+#theme-2:checked ~ .slider {
+  transform: translateX(22px);
+}
+
+#theme-3:checked ~ .slider {
+  transform: translateX(45px);
+}
+.toggle-numbers {
+  width: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+input {
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  #full-calc {
+    justify-content: center;
+  }
+  .header,
+  .buttons-container,
+  .results {
+    width: 35%;
+  }
+  .results {
+    height: 110px;
+    padding-right: 20px;
+    font-size: 4rem;
+  }
+
+  .buttons-container {
+    height: 500px;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 30px;
+    padding: 30px;
+    row-gap: 30px;
+  }
+
+  .equal,
+  .del,
+  .reset {
+    font-size: 20px;
+  }
+
+  .header-L {
+    margin-left: 0;
+    padding-right: 0;
+  }
+
+  .header {
+    padding: 0;
+  }
+  .numbers {
+    font-size: 2.3rem;
+  }
+
+  button:active {
+    opacity: 0.8;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #full-calc {
+    background-color: hsl(268, 75%, 9%);
+  }
+  .results,
+  .buttons-container,
+  .toggle-container {
+    background-color: hsl(268, 71%, 12%);
+  }
+  .numbers {
+    background-color: hsl(268, 47%, 21%);
+    box-shadow: 0px 3px hsl(290, 70%, 36%);
+    color: hsl(52, 100%, 62%);
+  }
+
+  .del,
+  .reset {
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0px 3px hsl(285, 91%, 52%);
+    color: white;
+  }
+
+  .equal {
+    background-color: hsl(176, 100%, 44%);
+    box-shadow: 0px 3px hsl(177, 92%, 70%);
+    color: hsl(198, 20%, 13%);
+  }
+
+  .slider {
+    background-color: hsl(176, 100%, 44%);
+    left: 48px;
+  }
+
+  .result,
+  .color {
+    color: hsl(52, 100%, 62%);
+  }
+
+  #theme-2:checked ~ .slider {
+    transform: translateX(-23px);
+  }
+
+  #theme-3:checked ~ .slider {
+    transform: translateX(0px);
+  }
+  #theme-1:checked ~ .slider {
+    transform: translateX(-43px);
+  }
+} ;

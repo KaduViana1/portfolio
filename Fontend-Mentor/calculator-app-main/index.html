@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Calculator app</title>
+  <script src="./themescript.js" defer></script>
+<script src="./calculatorscript.js" defer></script>
+</head>
+<body>
+<div id="full-calc">
+  <div class="header">
+    <div class="header-L">
+      <span style="font-size: 2rem;" class="color">calc</span>
+      <span class="color theme">THEME</span>
+    </div>
+    <div class="header-R">
+      <div class="toggle-numbers">
+        <label for="theme-1" class="color">1</label>
+        <label for="theme-2" class="color">2</label>
+        <label for="theme-3" class="color">3</label>
+      </div>
+      <div class="toggle-container">
+        <input type="radio" id="theme-1" name="theme" value="theme-1">
+        <input type="radio" id="theme-2" name="theme" value="theme-2">
+        <input type="radio" id="theme-3" name="theme" value="theme-3">
+        <span class="slider"></span>
+      </div>
+    </div>
+  </div>
+  <div class="results">
+    <span class="result" id="result">0</span>
+  </div>
+  <div class="buttons-container">
+    <button class="button-7 numbers">7</button>
+    <button class="button-8 numbers">8</button>
+    <button class="button-9 numbers">9</button>
+    <button class="button-del del">DEL</button>
+    <button class="button-4 numbers">4</button>
+    <button class="button-5 numbers">5</button>
+    <button class="button-6 numbers">6</button>
+    <button class="button-plus numbers">+</button>
+    <button class="button-1 numbers">1</button>
+    <button class="button-2 numbers">2</button>
+    <button class="button-3 numbers">3</button>
+    <button class="button-minus numbers">-</button>
+    <button class="button-dot numbers">.</button>
+    <button class="button-0 numbers">0</button>
+    <button class="button-divide numbers">/</button>
+    <button class="button-x numbers">x</button>
+    <button class="button-reset reset">RESET</button>
+    <button class="button-equal equal">=</button>
+  </div>
+</div>
+
+
+  
+
+</html>

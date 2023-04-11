@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  
+</head>
+<body>
+ <div id="page-container">
+  <h1>Our Pricing</h1>
+  <div id="toggle-selection">
+   <span>Annualy</span>
+   <label id="toggle" onclick="changePrices()">
+     <input id="checkbox" type="checkbox">
+     <span class="slider"></span>
+   </label>
+   <span>Montly</span>
+  </div>
+ <div id="cards-container">
+  <div class="plan-cards cards1-3">
+    <span class="plan-type">Basic</span>
+    <div class="price-container">
+      <span id="cipher">$</span>
+      <span class="price" id="basic">199.99</span>
+    </div>
+    <table>
+      <tr>
+        <td>500 GB Storage</td>
+      </tr>
+      <tr>
+        <td>2 Users Allowed</td>
+      </tr>
+      <tr>
+        <td>Send up to 3GB</td>
+      </tr>
+    </table>
+    <button class="buttons1-3">LEARN MORE</button>
+  </div>
+  <div class="plan-cards card2">
+    <span class="plan-type c2">Professional</span>
+    <div class="price-container"> 
+      <span id="cipher">$</span>
+      <span class="price" id="professional">249.99</span>
+    </div>
+    <table>
+      <tr>
+        <td>1 TB Storage</td>
+      </tr>
+      <tr>
+        <td>5 Users Allowed</td>
+      </tr>
+      <tr>
+        <td>Send up to 10GB</td>
+      </tr>
+    </table>
+    <button class="button2">LEARN MORE</button>
+  </div>
+  <div class="plan-cards cards1-3">
+    <span class="plan-type">Master</span>
+    <div class="price-container">
+      <span id="cipher">$</span>
+      <span class="price" id="master">399.99</span>
+    </div>
+    <table>
+      <tr>
+        <td>2 TB Storage</td>
+      </tr>
+      <tr>
+        <td>10 Users Allowed</td>
+      </tr>
+      <tr>
+        <td>Send up to 20GB</td>
+      </tr>
+    </table>
+    <button class="buttons1-3">LEARN MORE</button>
+  </div>
+ </div>
+  
+
+  </div>
+</body>
+</html>
