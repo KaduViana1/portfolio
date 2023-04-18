@@ -13,13 +13,28 @@
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Me / Contact</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a id="header-about" href="#about">About Me / Contact</a></li>
+          <li><a id="header-projects" href="#projects">Projects</a></li>
+          <li class="language-i">
+            <button class="languages">
+              <span class="header-languages"> Change Language </span>
+              <span class="lang-arrow">&#9660;</span>
+            </button>
+            <div class="language-selector">
+              <button id="portuguese-button" class="language-button">
+                Português
+              </button>
+              <div class="divisor"></div>
+              <button id="english-button" class="language-button">
+                English
+              </button>
+            </div>
+          </li>
         </ul>
       </nav>
     </header>
     <section class="home" id="home">
-      <h1>Looking for a Full-Stack Web Developer?</h1>
+      <h1 id="hero-title">Looking for a Full-Stack Web Developer?</h1>
       <a href="#about">
         <svg class="arrows">
           <path class="a1" d="M0 0 L30 32 L60 0"></path>
@@ -30,18 +45,18 @@
     </section>
     <section class="about" id="about">
       <div class="balloon">
-        <p class="description">
+        <p id="description-p1" class="description">
           Hi, my name is Carlos Eduardo, but you can call me Kadu!
         </p>
-        <p class="description">
+        <p id="description-p2" class="description">
           I've always been fascinated by technology, so I decided to start a
           career as a Developer.
         </p>
-        <p class="description">
+        <p id="description-p3" class="description">
           Currently I'm focused to become as best as I can get with Full-Stack
           Web Development.
         </p>
-        <p class="description">
+        <p id="description-p4" class="description">
           I'm especially used to work with javascript, React.js and Node.js, but
           willingly and longing to learn any new technologies to build better
           and better projects.
@@ -51,15 +66,15 @@
         <div class="card-header">
           <img src="./Assets/Foto02.jpg" class="profile-img" alt="My Photo" />
           <div class="infos-container">
-            <span class="infos">Name: Carlos Eduardo Viana</span>
-            <span class="infos">Age: 26</span>
+            <span id="info-name" class="infos">Name: Carlos Eduardo Viana</span>
+            <span id="info-age" class="infos">Age: 26</span>
             <span class="infos"
-              >From: Pernambuco, Brasil
+              ><p id="info-location">From: Pernambuco, Brasil</p>
               <img src="./Assets/brazil.png" alt="Brazil Flag" />
             </span>
           </div>
         </div>
-        <span class="technologies">Technologies:</span>
+        <span id="info-tecnologies" class="technologies">Technologies:</span>
         <div class="technologies-container">
           <img src="./Assets/html.png" alt="HTML Icon" />
           <img src="./Assets/css-3.png" alt="CSS Icon" />
@@ -71,7 +86,7 @@
           <img src="./Assets/mongodb.png" alt="MongoDB Icon" />
           <img src="./Assets/git.png" alt="Git Icon" />
         </div>
-        <span class="technologies">Contact:</span>
+        <span id="info-contact" class="technologies">Contact:</span>
         <div class="contact-container">
           <a href="https://www.instagram.com/kaduv96/" target="_blank">
             <img src="./Assets/instagram.svg" alt="Instagram Icon" />
@@ -105,7 +120,7 @@
           data-modal-img=""
         />
       </div>
-      <h1>My Projects</h1>
+      <h1 id="projects-title">My Projects</h1>
       <div class="project-container">
         <img
           data-modal-src="./Assets/Project-Youtube-PS.png"
@@ -113,18 +128,18 @@
           alt="My Clone of YouTube Site"
         />
         <div class="project-description">
-          <p>
+          <p id="yt-p1">
             A clone of YouTube's homepage desktop version built with Typescript
             React.js using styled components and react-router-dom, with
             side-bar, configurations dropdown where you can toggle dark/light
             themes that stays saved to local storage.
           </p>
-          <p>
+          <p id="yt-p2">
             The application uses an API to provide user creation, user
             authentication and creation of "template-videos" for the search
             page.
           </p>
-          <p>
+          <p id="yt-p3">
             On the back-end I used Node.js express with typescript, MySQL as
             database for users data and videos templates, uuid to generate
             random ids for users and videos, bycript tu encrypt users passwords,
@@ -136,19 +151,19 @@
           <a
             href="https://youtube-clone-ten-beta.vercel.app/"
             target="_blank"
-            class="link"
+            class="link to-site"
             >Go to site</a
           >
           <a
             href="https://github.com/KaduViana1/Youtube-Clone"
             target="_blank"
-            class="link"
+            class="link to-github"
             >Go to GitHub repository</a
           >
           <a
             href="https://github.com/KaduViana1/PP-api-YT"
             target="_blank"
-            class="link"
+            class="link to-git-api"
             >Go to GitHub API repository</a
           >
         </div>
@@ -160,20 +175,20 @@
           alt="A site of the batman 2022 movie"
         />
         <div class="project-description">
-          <p>
+          <p id="batman-p1">
             A React.js built application to simulate an website for advertising
             and selling tickets to the 2022 batman movie.
           </p>
-          <p>
+          <p id="batman-p2">
             The site is responsive to smaller devices and contains four pages:
           </p>
-          <p>
+          <p id="batman-p3">
             Home page with the movie trailer, description and main characters
             cards;
           </p>
-          <p>Contact page with a simple form for contact;</p>
-          <p>Photos page with a carousel from movie's photos;</p>
-          <p>
+          <p id="batman-p4">Contact page with a simple form for contact;</p>
+          <p id="batman-p5">Photos page with a carousel from movie's photos;</p>
+          <p id="batman-p6">
             Comments page where you can add comments, simulationg a connection
             with a database.
           </p>
@@ -182,26 +197,26 @@
           <a
             href="https://master.dlakzzzyclh14.amplifyapp.com/"
             target="_blank"
-            class="link"
+            class="link to-site"
             >Go to site</a
           >
           <a
             href="https://github.com/KaduViana1/ProjetoBatman"
             target="_blank"
-            class="link"
+            class="link to-github"
             >Go to GitHub repository</a
           >
         </div>
       </div>
-      <h2>Some projects from Frontend Mentor</h2>
-      <span
-        >Those are some smaller and simpler challenges from the
+      <h2 id="small-projects-title">Some projects from Frontend Mentor</h2>
+      <span id="small-projects-t1"
+        >These are some smaller and simpler challenges from the
         <a class="link" href="https://www.frontendmentor.io/" target="_blank"
           >Frontend Mentor</a
         >
         website, focused on testing and improving devs abilities.
       </span>
-      <span style="margin-top: -20px"
+      <span style="margin-top: -20px" id="small-projects-t2"
         >They are all responsive, using the mobile first strategy and built with
         only vanilla javascript,html and css.</span
       >
@@ -213,12 +228,14 @@
           >
             <img src="./Assets/pricing-component.jpg" alt="" />
           </a>
-          <p>A price component with a toggle button to change the prices.</p>
+          <p id="price-component">
+            A price component with a toggle button to change the prices.
+          </p>
           <div class="links-container">
             <a
               href="https://github.com/KaduViana1/princing-component-with-toggle"
               target="_blank"
-              class="link"
+              class="link to-github"
               >Go to GitHub repository</a
             >
           </div>
@@ -230,7 +247,7 @@
           >
             <img src="./Assets/news-page.jpg" alt="" />
           </a>
-          <p>
+          <p id="news-page">
             A News-Page with a simple menu modal. On mobile the header
             navigation changes to a modal menu.
           </p>
@@ -238,7 +255,7 @@
             <a
               href="https://github.com/KaduViana1/News-Homepage-Front-Mentor-"
               target="_blank"
-              class="link"
+              class="link to-github"
               >Go to GitHub repository</a
             >
           </div>
@@ -250,7 +267,7 @@
           >
             <img src="./Assets/desktop-design-theme-1.jpg" alt="" />
           </a>
-          <p>
+          <p id="calculator">
             A Calculator App with three color themes, it uses
             "prefered-color-scheme" to define the best suited theme for the user
             based on the device configuration.
@@ -259,7 +276,7 @@
             <a
               href="https://github.com/KaduViana1/calculator-app"
               target="_blank"
-              class="link"
+              class="link to-github"
               >Go to GitHub repository</a
             >
           </div>
