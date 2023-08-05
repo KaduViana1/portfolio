@@ -138,7 +138,7 @@ a:focus,
   display: flex;
   justify-content: center;
   gap: 50px;
-  padding-top: 6%;
+  padding-top: 4%;
   position: relative;
 }
 
@@ -327,6 +327,10 @@ span > img {
 
 .project-description > p {
   background-color: inherit;
+}
+
+.project-image {
+  width: 338px;
 }
 
 .modal {
